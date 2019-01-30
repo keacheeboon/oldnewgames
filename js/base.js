@@ -1,16 +1,16 @@
-var onGetHtmlForTopBar = function(html) {
-	$("#root").prepend(html);
+function Make_NavBarMe_Active() {
 	var body_myid = $("body").attr("myid");
 	if (body_myid !== null) {
 		$("#top-navto-" + body_myid).addClass("active");
 	}
-};
-
-var onGetHtmlForBottomBar = function(html) {
-	$("#root").append(html);
-};
+}
 
 $(document).ready(function () {
-    $.get("../inc/top-bar.html", onGetHtmlForTopBar);
-    $.get("../inc/bottom-bar.html", onGetHtmlForBottomBar);
+    $.get("./inc/top-bar.html", function (html) {
+    	$("#root").prepend(html);
+		Make_NavBarMe_Active();
+    });
+    $.get("./inc/bottom-bar.html", function (html) {
+    	$("#root").append(html);
+    });
 });
