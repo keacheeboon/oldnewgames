@@ -163,7 +163,7 @@ html, body {
     color: #ffffff;
     text-shadow: 0px 0px 11px #ffffff;
 }
-#top-navbar-items > div.active > a:link {
+#top-navbar-items > div.active {
     background-color: #a00000;
 }
 
