@@ -8,7 +8,8 @@ html, body {
     font-family: Times, serif;
     font-size: 24px;
     height: 100%;
-    background-image: url("../res/bkgnd-clouds.bmp");
+    background-color: #73add6;
+    background-image: url("../res/bkgnd-clouds.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 1024px;
@@ -174,4 +175,99 @@ html, body {
 #bottom-footer-table td {
     vertical-align: middle;
     height: auto;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+
+.post {
+    position: relative;
+    border: 2px solid black;
+    margin-bottom: 10px;
+}
+.post > .title {
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 1px solid black;
+}
+.post > .content {
+    padding: 10px 20px;
+    font-size: 18px;
+    overflow: auto;
+    text-align: justify;
+}
+.post > .content > img {
+    float: left;
+    max-width: 50%;
+    padding-right: 20px;
+    display: block;
+    margin: auto;
+}
+.post > .content p {
+    padding: 0.5em 0;
+    text-indent: 2em;
+}
+
+a.goto-steam,
+a.goto-gog,
+a.goto-battlenet {
+    float: right;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #404040;
+    background: linear-gradient(#606060, #202020);
+    color: white;
+    text-decoration: none;
+}
+
+a.goto-steam:link span, a.goto-steam:visited span, a.goto-steam:hover span, a.goto-steam:active span,
+a.goto-gog:link span, a.goto-gog:visited span, a.goto-gog:hover span, a.goto-gog:active span,
+a.goto-battlenet:link span, a.goto-battlenet:visited span, a.goto-battlenet:hover span, a.goto-battlenet:active span {
+    transition: text-shadow 0.2s linear;
+}
+
+a.goto-steam:hover span, a.goto-steam:active span,
+a.goto-gog:hover span, a.goto-gog:active span,
+a.goto-battlenet:hover span, a.goto-battlenet:active span {
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+a.goto-steam:active,
+a.goto-gog:active,
+a.goto-battlenet:active {
+    background-color: #404040;
+    background: linear-gradient(#202020, #606060);
+}
+
+a.goto-steam div,
+a.goto-gog div,
+a.goto-battlenet div {
+    float: left;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+
+a.goto-steam div {
+    background-image: url("../res/steam-icon.svg");
+}
+
+a.goto-gog div {
+    background-image: url("../res/gog-icon.png");
+}
+
+a.goto-battlenet div {
+    background-image: url("../res/battlenet-icon.svg");
+}
+
+a.goto-steam span,
+a.goto-gog span,
+a.goto-battlenet span {
+    padding: 10px;
+    line-height: 64px;
 }
