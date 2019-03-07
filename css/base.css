@@ -39,7 +39,7 @@ html, body {
 }
 
 #bottom-bar {
-    left: 0; right: 0; bottom: 0; height: 100px;
+    left: 0; right: 0; bottom: 0; height: 200px;
     background-color: #000000;
     color: #ffffff;
     font-size: 16px;
@@ -49,7 +49,7 @@ html, body {
 #root {
     position: relative;
     padding-top: 250px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
     min-height: 100%;
 }
 
@@ -177,11 +177,17 @@ html, body {
     height: auto;
 }
 
-
-.clearfix {
-    clear: both;
+#friends-link a:link,
+#friends-link a:visited,
+#friends-link a:hover,
+#friends-link a:active {
+    color: white;
+    text-decoration: none;
 }
 
+#friends-link a:hover {
+    color: cyan;
+}
 
 .post {
     position: relative;
