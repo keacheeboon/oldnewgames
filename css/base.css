@@ -63,6 +63,20 @@ html, body {
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,1);
 }
 
+#hint-add-bookmark {
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0;
+    border: 2px solid black;
+}
+
+#hint-add-bookmark a:link,
+#hint-add-bookmark a:visited,
+#hint-add-bookmark a:active,
+#hint-add-bookmark a:hover {
+    color: blue;
+}
 
 #site-title {
     display: inline-block;
